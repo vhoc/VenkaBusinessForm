@@ -1,1 +1,1 @@
-# My personal starting boilerplate for Landing Pages
+# A registration form for Venka customers
