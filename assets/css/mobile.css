@@ -1,0 +1,37 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    padding: 1rem;
+}
+
+.card {
+    width: 100%;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 2px 2px 12px rgb(133, 133, 133);
+}
+
+.card-header {
+    text-align: center;
+    padding: 1rem;
+    background: var( --card-header );
+    border-radius: 12px 12px 0px 0px;
+    color: var( --color-dark );
+}
+
+.card-body {
+    padding: 1rem;
+    background: white;
+    border-radius: 0px 0px 12px 12px;
+}
+
+h1 {
+    font-size: 1.5em;
+}

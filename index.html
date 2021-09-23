@@ -8,23 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title></title>
-    <meta name="title" content="">
-    <meta name="description" content="">
+    <title>Venka :: Registro de Establecimiento</title>
+    <meta name="title" content="Venka: Registro de Establecimiento">
+    <meta name="description" content="Formulario de registro de establecimiento">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://">
+    <meta property="og:url" content="https://nuevo.venka.mx">
+    <meta property="og:title" content="Venka: Registro de Establecimiento">
+    <meta property="og:description" content="Formulario de registro de establecimiento">
+    <meta property="og:image" content="https://nuevo.venka.mx">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://">
-    <meta property="twitter:title" content="">
-    <meta property="twitter:description" content="">
-    <meta property="twitter:image" content="https://">
+    <meta property="twitter:url" content="https://nuevo.venka.mx">
+    <meta property="twitter:title" content="Venka: Registro de Establecimiento">
+    <meta property="twitter:description" content="Formulario de registro de establecimiento">
+    <meta property="twitter:image" content="https://nuevo.venka.mx">
 
     <!-- Styles -->
     <style>
@@ -37,41 +37,40 @@
 
         /* Variables here */
         :root {
-            
+            --color-clear: #e0e0e0;
+            --color-dark: #303030;
+            --venka-gradient: linear-gradient(180deg, rgba(115,180,65,1) 0%, rgba(114,190,56,1) 65%, rgba(130,217,63,1) 100%);
+            --card-header: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%);
+        }
+
+        html, body {
+            background: var( --venka-gradient );
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
         }
 
         @font-face {
-            font-family: '';
-            src: url('') format('woff2'),
-                url('') format('woff');
+            font-family: 'rubiklight';
+            src: url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+                url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
         }
 
         body {
-            font-family: '';
+            font-family: 'rubiklight';
         }
-
-        li { list-style: none }
-
-        a { text-decoration: none; }
-
-        .border {
-            border-style: solid;
-            border-color: red;
-            border-width: 1px;
-        }
+        
     </style>
 
     <link rel="stylesheet" media="screen and (min-width:0px)" href="assets/css/mobile.css"/>
     <link rel="stylesheet" media="screen and (min-width:481px)" href="assets/css/tablet.css"/>
     <link rel="stylesheet" media="screen and (min-width:769px)" href="assets/css/desktop.css"/>
-    <link rel="stylesheet" media="screen and (min-width:1025px)" href="assets/css/desktop-xl.css"/>
-    <link rel="stylesheet" media="screen and (min-width:1201px)" href="assets/css/desktop-xxl.css"/>
 
     <!-- Preloads -->
-    <link rel="preload" as="image" href="assets/img/"/>
+    <link rel="preload" as="image" href="https://venka.mx/assets/img/venka-logo-250.png"/>
 
 </head>
 
@@ -80,45 +79,52 @@
     <div id="main">
         
         <!---------------------------------->
-        <!--        Navigation Bar        -->
-        <!---------------------------------->
-
-        <nav>
-
-        </nav>
-
-        <!---------------------------------->
-        <!--            Header            -->
-        <!---------------------------------->
-
-        <header>
-
-        </header>
-
-        <!---------------------------------->
         <!--            Section           -->
         <!---------------------------------->
 
-        <section id="">
+        <section id="formulario">
 
             <div class="container">
 
+                <div class="card">
 
+                    <div class="card-header">
+                        <h1>Datos de la Empresa o Sucursal</h1>
+                    </div>
+
+                    <div class="card-body">
+                        
+                        <!-- Easy Forms -->
+                        <div id="c41">
+                            Llena mi <a href="https://waxyform.com/app/app/form?id=41">formulario en línea</a>.
+                        </div>
+                        <script type="text/javascript">
+                            (function(d, t) {
+                                var s = d.createElement(t), options = {
+                                    'id': 41,
+                                    'theme': 0,
+                                    'container': 'c41',
+                                    'height': '1631px',
+                                    'form': '//waxyform.com/app/app/embed'
+                                };
+                                s.type= 'text/javascript';
+                                s.src = 'https://waxyform.com/app/static_files/js/form.widget.js';
+                                s.onload = s.onreadystatechange = function() {
+                                    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                                    try { (new EasyForms()).initialize(options).display() } catch (e) { }
+                                };
+                                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                            })(document, 'script');
+                        </script>
+                        <!-- End Easy Forms -->
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
-
-        <!---------------------------------->
-        <!--            Footer            -->
-        <!---------------------------------->
-
-        <footer>
-
-            
-
-        </footer>
-
 
     </div>
 
