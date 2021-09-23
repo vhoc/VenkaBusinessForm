@@ -1,11 +1,7 @@
 @media only screen and ( min-width: 481px ) {
     
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 480px;
-        padding: 1rem;
     }
 
  }
